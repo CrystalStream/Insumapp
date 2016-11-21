@@ -1,0 +1,28 @@
+hr {
+  margin: 0 0 !important;
+}
+.mt {
+  margin-top: 3em;
+}
+.mb {
+  margin-bottom: 1em;
+}
+.circle {
+  border-radius: 50%;
+}
+.well {
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+.styless {
+  list-style: none;
+  padding-left: 0;
+}
+.text-left {
+  text-align: left;
+}
+.item-values_li {
+  margin-bottom: 10px;
+}

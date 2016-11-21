@@ -1,0 +1,55 @@
+<div class="container" ng-cloak>
+	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+		<div class="col-xs-12 col-md-10">
+			<input class="form-control"  placeholder="Buscar" type="text" ng-model="search">
+		</div>
+	</div>
+</div>
+<div class="container-fluid">	
+	<div class="col-xs-12 mt">
+		<div class="panel panel-info">
+			<div class="panel-heading"><h4>Proveedores</h4></div>
+			<div class="panel-body">
+				<div class="well" ng-repeat="item in items | filter:search" >
+					<div class="col-xs-8 col-sm-2 col-md-2 mb">
+						<img class="img-responsive" src="assets/img/avatar.png">
+					</div>
+    			<div class="col-xs-12 col-sm-8 col-md-8">
+    				<ul class="item-values styless text-left">
+    					<div class="col-xs-12">
+	    					<li class="item-values_li"><i class="material-icons">description</i> <b>Descripcion:</b><hr>
+									<span class="item-values_sp">
+										{{item}}
+									</span>
+	    					</li>
+    					</div>
+    					<div class="col-xs-6 col-md-4">
+	    					<li class="item-values_li"><i class="material-icons">settings_cell</i> <b>Telefono (s)</b> <hr>
+									<span class="item-values_sp">
+										<ul style="padding-left: 10px;">
+											<li>(044) 341 121 09 21</li>
+										</ul>
+									</span>
+	    					</li>
+    					</div>
+    					<div class="col-xs-6 col-md-4">
+	    					<li class="item-values_li">
+	    						<button class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="bottom" title="Ubicacion">
+	    							<i class="material-icons">place</i> 
+	    						</button>
+	    					</li>
+    					</div>
+    					<div class="col-xs-12 col-md-4">
+	    					<li class="item-values_li">
+	    						<button class="btn btn-info btn-block">
+	    							Mas info
+	    						</button>
+	    					</li>
+    					</div>
+    				</ul>
+    			</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
