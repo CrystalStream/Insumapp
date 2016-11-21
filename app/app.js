@@ -5,6 +5,10 @@ angular.module('insumapp', ['ngRoute'])
 			templateUrl : "partials/main.html",
 			controller  : "MainController"
 		})
+		.when('/proveedor/:id', {
+			templateUrl : "partials/view.html",
+			controller  : "ViewController"
+		})
 		.otherwise({
 			templateUrl : "partials/main.html"
 		})

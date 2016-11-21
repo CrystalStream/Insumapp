@@ -26,3 +26,18 @@ hr {
 .item-values_li {
   margin-bottom: 10px;
 }
+.btn-float {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+.borde_left {
+  border-left: 1px solid #e3e3e3;
+}
+@media (max-width: 770px) {
+  body .mt_xs {
+    margin-top: 2em;
+    border-top: 1px solid #e3e3e3;
+    padding-top: 20px;
+  }
+}
